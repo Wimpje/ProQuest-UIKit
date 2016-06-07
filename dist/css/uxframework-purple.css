@@ -1,4 +1,4 @@
-/* ProQuest-UIKit v1.3.0. Updated Tuesday, January 26th, 2016, 4:09 PM EST */
+/* ProQuest-UIKit v1.3.0. Updated Tuesday, June 7th, 2016, 10:50 AM EDT */
 @font-face {
   font-family: 'Roboto';
   src: url('../fonts/Roboto-Regular-webfont.eot');
@@ -769,7 +769,6 @@ fieldset[disabled] .checkbox label {
   border-radius: 50%;
   box-shadow: 0 2px 0 rgba(0, 0, 0, 0.075), inset 0 1px 0 rgba(255, 255, 255, 0.5);
   transition: 0.3s all;
-  -webkit-transform: translate(3px, 0);
   -ms-transform: translate(3px, 0);
   transform: translate(3px, 0);
 }
@@ -786,7 +785,6 @@ fieldset[disabled] .checkbox label {
   background-color: #5859A5;
 }
 .checkbox-toggle > input[type=checkbox]:checked + label::after {
-  -webkit-transform: translate(20px, 0);
   -ms-transform: translate(20px, 0);
   transform: translate(20px, 0);
 }
@@ -2523,6 +2521,106 @@ div.pq-logo {
 .nav-pills > li.active > a:focus {
   color: #fff;
   background-color: #5859A5;
+}
+.tree-nav ol,
+.tree-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.tree-nav > ol,
+.tree-nav > ul {
+  width: calc(80%);
+  height: 600px;
+  border: 1px solid #cdcdcc;
+  border-radius: 4px;
+  background: #f7f7f7;
+  position: relative;
+}
+.tree-nav > ol > li,
+.tree-nav > ul > li {
+  width: 48%;
+}
+.tree-nav > ol > li > div,
+.tree-nav > ul > li > div {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: #fff;
+  width: 52%;
+  border-left: 1px solid #cdcdcc;
+  z-index: 1;
+}
+.tree-nav > ol > li > div > ol,
+.tree-nav > ul > li > div > ol,
+.tree-nav > ol > li > div > ul,
+.tree-nav > ul > li > div > ul {
+  padding: 0 0 0.625rem;
+  height: 100%;
+  overflow-x: auto;
+}
+.tree-nav > ol > li > div > ol > li > a,
+.tree-nav > ul > li > div > ol > li > a,
+.tree-nav > ol > li > div > ul > li > a,
+.tree-nav > ul > li > div > ul > li > a {
+  font-weight: bold;
+}
+.tree-nav > ol > li > div a,
+.tree-nav > ul > li > div a {
+  display: block;
+  padding: 7px 8px 7px 22px;
+}
+.tree-nav > ol > li > div a:hover,
+.tree-nav > ul > li > div a:hover,
+.tree-nav > ol > li > div a:focus,
+.tree-nav > ul > li > div a:focus,
+.tree-nav > ol > li > div a:active,
+.tree-nav > ul > li > div a:active {
+  background: #eee;
+  text-decoration: none;
+}
+.tree-nav > ol > li > div[aria-hidden=true],
+.tree-nav > ul > li > div[aria-hidden=true] {
+  visibility: hidden;
+}
+.tree-nav > ol > li:first-child button,
+.tree-nav > ul > li:first-child button {
+  border-radius: 4px 0 0 0;
+}
+.tree-nav button {
+  background: none;
+  border: none;
+  width: 100%;
+  padding: 0.625rem;
+  position: relative;
+  text-align: left;
+}
+.tree-nav button span {
+  display: block;
+  width: 100%;
+}
+.tree-nav button:hover,
+.tree-nav button:focus,
+.tree-nav button:active {
+  background: #999;
+  color: #fff;
+}
+.tree-nav button.active {
+  background: #5859A5;
+  color: #fff;
+}
+.tree-nav button.active span:after {
+  content: "";
+  position: absolute;
+  right: -17px;
+  top: 0;
+  width: 0;
+  height: 0;
+  border-top: 17px solid transparent;
+  border-bottom: 18px solid transparent;
+  border-left: 17px solid #5859A5;
+  z-index: 100;
 }
 .panel {
   border-radius: 0;

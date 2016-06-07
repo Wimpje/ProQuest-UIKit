@@ -107,3 +107,104 @@
 		}
 	}
 }
+
+// Tree Navigation
+// --------------------------
+
+.tree-nav {
+	ol, ul {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+	}
+
+	> ol, > ul {
+		width: calc(100% - 20px);
+		height: 600px;
+		border: 1px solid #cdcdcc;
+		border-radius: 4px;
+		background: #f7f7f7;
+		position: relative;
+
+		> li {
+			width: 48%;
+
+			> div {
+				position: absolute;
+				top: 0;
+				right: 0;
+				bottom: 0;
+				background: #fff;
+				width: 52%;
+				border-left: 1px solid #cdcdcc;
+				z-index: 1;
+
+				> ol, > ul {
+					padding: 0 0 0.625rem;
+					height: 100%;
+					overflow-x: auto;
+
+					> li > a {
+						font-weight: bold;
+					}
+				}
+
+				a {
+					display: block;
+					padding: 7px 8px 7px 22px;
+					&:hover, &:focus, &:active {
+						background: #eee;
+						text-decoration: none;
+					}
+				}
+			}
+
+			> div[aria-hidden=true] {
+				visibility: hidden;
+			}
+		}
+
+		> li:first-child button {
+			border-radius: 4px 0 0 0;
+		}
+	}
+
+	button {
+		background: none;
+		border: none;
+		width: 100%;
+		padding: 0.625rem;
+		position: relative;
+		text-align: left;
+
+		span {
+			display: block;
+			width: 100%;
+		}
+
+		&:hover,
+		&:focus,
+		&:active {
+			background: #999;
+			color: #fff;
+		}
+	}
+
+	button.active {
+		background: @component-active-bg;
+		color: @component-active-color;
+
+		span:after {
+			content: "";
+			position: absolute;
+			right: -17px;
+			top: 0;
+			width: 0;
+			height: 0;
+			border-top: 17px solid transparent;
+			border-bottom: 18px solid transparent;
+			border-left: 17px solid @component-active-bg;
+			z-index: 100;
+		}
+	}
+}
