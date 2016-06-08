@@ -119,7 +119,7 @@ module.exports = function(grunt) {
 			uikitTmp: {
 				expand: true,
 				cwd: 'src/',
-				src: ['fonts/**', 'images/**'],
+				src: ['fonts/**', 'images/**', 'js/**'],
 				dest: '.tmp/'
 			},
 			bsTmp: {
@@ -131,7 +131,7 @@ module.exports = function(grunt) {
 			uikitDist: {
 				expand: true,
 				cwd: '.tmp/',
-				src: '**',
+				src: ['**'],
 				dest: 'dist/'
 			}
 		},
