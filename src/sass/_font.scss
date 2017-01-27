@@ -1,0 +1,102 @@
+@font-face {
+	font-family: 'Roboto';
+	src: url('#{$font-path}/Roboto-Regular-webfont.eot');
+	src: url('#{$font-path}/Roboto-Regular-webfont.eot?#iefix') format("embedded-opentype"),
+		 url('#{$font-path}/Roboto-Regular-webfont.woff') format("woff"),
+		 url('#{$font-path}/Roboto-Regular-webfont.ttf') format("truetype"),
+		 url('#{$font-path}/Roboto-Regular-webfont.svg#Roboto') format("svg");
+}
+
+@font-face {
+	font-family: 'Roboto Light';
+	src: url('#{$font-path}/Roboto-Light-webfont.eot');
+	src: url('#{$font-path}/Roboto-Light-webfont.eot?#iefix') format("embedded-opentype"),
+		 url('#{$font-path}/Roboto-Light-webfont.woff') format("woff"),
+		 url('#{$font-path}/Roboto-Light-webfont.ttf') format("truetype"),
+		 url('#{$font-path}/Roboto-Light-webfont.svg#Roboto Light') format("svg");
+}
+
+@font-face {
+	font-family: 'Roboto Condensed';
+	src: url('#{$font-path}/RobotoCondensed-Regular-webfont.eot');
+	src: url('#{$font-path}/RobotoCondensed-Regular-webfont.eot?#iefix') format("embedded-opentype"),
+		 url('#{$font-path}/RobotoCondensed-Regular-webfont.woff') format("woff"),
+		 url('#{$font-path}/RobotoCondensed-Regular-webfont.ttf') format("truetype"),
+		 url('#{$font-path}/RobotoCondensed-Regular-webfont.svg#Roboto Condensed') format("svg");
+}
+
+@font-face {
+	font-family: 'aleobold';
+	src: url('#{$font-path}/aleo-bold-webfont.eot');
+	src: url('#{$font-path}/aleo-bold-webfont.eot?#iefix') format("embedded-opentype"),
+		 url('#{$font-path}/aleo-bold-webfont.woff') format("woff"),
+		 url('#{$font-path}/aleo-bold-webfont.ttf') format("truetype"),
+		 url('#{$font-path}/aleo-bold-webfont.svg#aleobold') format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'aleobolditalic';
+	src: url('#{$font-path}/aleo-bolditalic-webfont.eot');
+	src: url('#{$font-path}/aleo-bolditalic-webfont.eot?#iefix') format("embedded-opentype"),
+		 url('#{$font-path}/aleo-bolditalic-webfont.woff') format("woff"),
+		 url('#{$font-path}/aleo-bolditalic-webfont.ttf') format("truetype"),
+		 url('#{$font-path}/aleo-bolditalic-webfont.svg#aleobolditalic') format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'aleoitalic';
+	src: url('#{$font-path}/aleo-italic-webfont.eot');
+	src: url('#{$font-path}/aleo-italic-webfont.eot?#iefix') format("embedded-opentype"),
+		 url('#{$font-path}/aleo-italic-webfont.woff') format("woff"),
+		 url('#{$font-path}/aleo-italic-webfont.ttf') format("truetype"),
+		 url('#{$font-path}/aleo-italic-webfont.svg#aleoitalic') format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'aleolight';
+	src: url('#{$font-path}/aleo-light-webfont.eot');
+	src: url('#{$font-path}/aleo-light-webfont.eot?#iefix') format("embedded-opentype"),
+		 url('#{$font-path}/aleo-light-webfont.woff') format("woff"),
+		 url('#{$font-path}/aleo-light-webfont.ttf') format("truetype"),
+		 url('#{$font-path}/aleo-light-webfont.svg#aleolight') format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'aleolightitalic';
+	src: url('#{$font-path}/aleo-lightitalic-webfont.eot');
+	src: url('#{$font-path}/aleo-lightitalic-webfont.eot?#iefix') format("embedded-opentype"),
+		 url('#{$font-path}/aleo-lightitalic-webfont.woff') format("woff"),
+		 url('#{$font-path}/aleo-lightitalic-webfont.ttf') format("truetype"),
+		 url('#{$font-path}/aleo-lightitalic-webfont.svg#aleolightitalic') format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'aleoregular';
+	src: url('#{$font-path}/aleo-regular-webfont.eot');
+	src: url('#{$font-path}/aleo-regular-webfont.eot?#iefix') format("embedded-opentype"),
+		 url('#{$font-path}/aleo-regular-webfont.woff') format("woff"),
+		 url('#{$font-path}/aleo-regular-webfont.ttf') format("truetype"),
+		 url('#{$font-path}/aleo-regular-webfont.svg#aleoregular') format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Glyphicons Halflings';
+	src: url('#{$font-path}/glyphicons-halflings-regular.eot');
+	src: url('#{$font-path}/glyphicons-halflings-regular.eot?#iefix') format("embedded-opentype"),
+		 url('#{$font-path}/glyphicons-halflings-regular.woff2') format("woff2"),
+		 url('#{$font-path}/glyphicons-halflings-regular.woff') format("woff"),
+		 url('#{$font-path}/glyphicons-halflings-regular.ttf') format("truetype"),
+		 url('#{$font-path}/glyphicons-halflings-regular.svg#uxfregular') format("svg");
+}
